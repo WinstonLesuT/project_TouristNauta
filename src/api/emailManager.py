@@ -12,8 +12,8 @@ server = smtplib.SMTP("smtp.gmail.com", 587)
 
 def send_email(url:str, recipient_email):
 
-    EMAIL =  os.getenv("EMAIL")
-    GMAIL_PASSWD = os.getenv("GMAIL_PASSWD")
+    EMAIL =  os.getenv("EMAIL", "Whattodo4geeks49@gmail.com")
+    GMAIL_PASSWD = os.getenv("GMAIL_PASSWD", "jwwjdosyrwvednnh")
    
 
     msg = MIMEMultipart('alternative')
